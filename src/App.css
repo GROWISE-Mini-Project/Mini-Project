@@ -1,0 +1,46 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+  padding: 20px;
+}
+
+.tab-navigation {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tab-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2c5f2d;
+}
+
+.tab-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tab-btn.active {
+  background: linear-gradient(90deg, #56ab2f 0%, #a8e063 100%);
+  color: white;
+  box-shadow: 0 5px 20px rgba(86, 171, 47, 0.4);
+}
+
+.tab-content {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
